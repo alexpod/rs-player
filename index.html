@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/icons/sun.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whather sounds</title>
+    <link rel="stylesheet" href="src/scss/global.scss">
+  </head>
+  <body>
+    <div id="app">
+      <div class="player">
+          <h1>Whather sounds</h1>
+          <div class="player__tracks">
+            <div class="player__track player__track-1" data-src="summer" data-image="summer-bg.jpg"></div>
+            <div class="player__track player__track-2" data-src="rain" data-image="rainy-bg.jpg"></div>
+            <div class="player__track player__track-3" data-src="winter" data-image="winter-bg.jpg"></div>
+          </div>
+          <div class="player__control">
+            <audio src="" preload="metadata" loop class="player__audio"></audio>
+            <input type="range" id="volume-slider" min="0" max="100" value="50">
+          </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
